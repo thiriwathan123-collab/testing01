@@ -1,0 +1,1210 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Times New Roman", Times, serif;
+}
+
+body {
+  background-color: #f9ebde;
+  margin: 0;
+  width: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 180px;
+}
+
+/* Header Section */
+
+.header {
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  z-index: 1000;
+  top: 0;
+  background-color: #f9ebde;
+  width: 100%;
+  height: 90px;
+  gap: 4px;
+  border-bottom: 2px solid #815854;
+}
+
+.header h1 {
+  margin: 1rem 2rem;
+  color: #815854;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 30px;
+  margin: 1rem 2rem;
+  list-style: none;
+}
+
+.nav-links li {
+  font-size: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #815854;
+}
+
+.nav-links a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+/* Intro Section */
+
+#home {
+  scroll-margin-top: 0;
+}
+
+#intro {
+  display: inline-block;
+  border: 2px rgba(185, 183, 183, 0.829);
+  width: 100%;
+  height: 26rem;
+  padding: 20px 20px 20px 20px;
+  font-family: "Times New Roman", Times, serif;
+  background-color: #815854;
+}
+
+#intro h1 {
+  display: flex;
+  justify-content: left;
+  font-size: 3rem;
+  color: #f9ebde;
+  margin-left: 1rem;
+  font-family: "Times New Roman", Times, serif;
+}
+
+#intro img {
+  display: flex;
+  position: absolute;
+  left: 60%;
+  top: 3%;
+  margin-top: 4rem;
+  max-width: 290px;
+  border-radius: 10px;
+}
+
+#intro h3 {
+  font-size: 1.4rem;
+  color: #f9ebde;
+  /* margin-right: 1000px; */
+}
+
+#intro p {
+  text-decoration: underline;
+  font-size: 1.5rem;
+  color: #f9ebde;
+  margin-left: 1rem;
+}
+
+/* About Me */
+
+.card h1 {
+  display: flex;
+  font-size: 3rem;
+  margin: 2rem;
+  color: #815854;
+  border-radius: 20px;
+  padding: 10px 5px;
+}
+
+/* .card_ {
+  background-color: #815854;
+  width: 70%;
+} */
+
+.card img {
+  width: 300px;
+  border-radius: 10px;
+  margin-left: 50px;
+}
+
+.card_ {
+  display: flex;
+}
+
+.introduction {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
+  font-size: 1.5rem;
+  line-height: 0.5;
+}
+
+.intro1 {
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+.edu {
+  display: flex;
+  position: static;
+  right: 20rem;
+  top: 31rem;
+  border-radius: 20px;
+  padding: 10px 5px;
+}
+
+.education {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.edu1 {
+  background-color: #815854;
+  font-size: 1.5rem;
+  color: #f9ebde;
+  border: 2px solid #815854;
+  border-radius: 10px;
+  padding: 30px 20px;
+}
+
+.edu2 {
+  background-color: #815854;
+  font-size: 1.5rem;
+  color: #f9ebde;
+  border: 2px solid #815854;
+  border-radius: 10px;
+  padding: 30px 20px;
+}
+
+.edu3 {
+  background-color: #815854;
+  font-size: 1.5rem;
+  color: #f9ebde;
+  border: 2px solid #815854;
+  border-radius: 10px;
+  padding: 30px 20px;
+}
+
+.extra2 h2 {
+  padding-bottom: 14px;
+}
+
+.working {
+  background-color: #f9ebde;
+  font-size: 1rem;
+  border: 2px solid #815854;
+  border-radius: 10px;
+  padding: 30px 20px;
+  min-width: 30%;
+}
+
+.working h2 {
+  text-align: center;
+}
+
+.working ul {
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+}
+
+.language {
+  background-color: #f9ebde;
+  font-size: 1rem;
+  border: 2px solid #815854;
+  border-radius: 10px;
+  padding: 30px 20px;
+  min-width: 20%;
+}
+
+.language ul {
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+.foods {
+  background-color: #f9ebde;
+  font-size: 1rem;
+  border: 2px solid #815854;
+  border-radius: 10px;
+  padding: 30px 20px;
+  min-width: 20%;
+}
+
+.foods li {
+  font-size: clamp(10px, 40vw, 20px);
+  margin-left: 10px;
+}
+
+.routine {
+  background-color: #f9ebde;
+  font-size: 1rem;
+  border: 2px solid #815854;
+  border-radius: 10px;
+  padding: 30px 20px;
+  min-width: 25%;
+}
+
+.routine li {
+  font-size: clamp(10px, 40vw, 20px);
+  margin-left: 10px;
+}
+
+.extra h1 {
+  margin-left: 30px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-size: 3rem;
+  color: #815854;
+}
+
+.teaching {
+  background-color: #f9ebde;
+  border: 2px solid #815854;
+  border-radius: 10px;
+  padding: 30px 20px;
+  min-width: 30%;
+}
+
+.teaching h2 {
+  text-align: center;
+}
+
+.teaching ul {
+  font-size: 1.3rem;
+  padding: 10px 20px 10px 30px;
+}
+
+.experience {
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+}
+
+.stu {
+  display: flex;
+  justify-content: center;
+  margin: 20px 20px;
+}
+
+.reviews {
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+}
+
+.reviews img {
+  background-color: #815854;
+  padding: 20px 30px;
+}
+
+.extra2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 5rem;
+  margin-top: 50px;
+}
+
+/* Skills Section */
+
+.html img {
+  width: 150px;
+}
+
+.html {
+  border: 2px solid gainsboro;
+  background-color: white;
+  max-width: 20rem;
+  text-align: center;
+  border-radius: 10%;
+  font-size: 1.2rem;
+  padding-top: 1.1rem;
+  padding-bottom: 1rem;
+}
+
+.css img {
+  max-width: 80px;
+}
+
+.css {
+  border: 2px solid gainsboro;
+  background-color: white;
+  max-width: 20rem;
+  text-align: center;
+  border-radius: 10%;
+  font-size: 1.2rem;
+  padding-top: 1.1rem;
+  padding-bottom: 1rem;
+}
+
+.responsive img {
+  max-width: 200px;
+}
+
+.responsive {
+  border: 2px solid gainsboro;
+  background-color: white;
+  max-width: 20rem;
+  text-align: center;
+  border-radius: 10%;
+}
+
+.card2 {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.skills {
+  text-align: center;
+  color: #f9ebde;
+  width: 100%;
+  border: 1px solid #815854;
+  background-color: #815854;
+  margin-bottom: 20px;
+}
+
+/* Gallery Section */
+
+.gallery {
+  text-align: center;
+  color: #f9ebde;
+  border: 1px solid #815854;
+  background-color: #815854;
+}
+
+.one {
+  text-align: center;
+  font-size: 2.5rem;
+  font-family: "Edu QLD Hand", cursive;
+}
+
+.nctwishintro {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid black;
+  background-color: #dee2ff;
+  padding: 20px 30px;
+  border-radius: 10px;
+  margin-left: 25%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.mem_profile p {
+  font-family: "Lobster Two", sans-serif;
+  font-weight: 700;
+}
+
+.nctwishintro p {
+  font-size: 1.1rem;
+}
+
+.members {
+  margin-left: 3rem;
+  margin-top: 3.5rem;
+  border-radius: 8px;
+}
+
+#h3-1 {
+  margin-top: 3rem;
+  margin-bottom: 3re;
+  text-align: center;
+  font-family: "Edu QLD Hand", cursive;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  text-align: center;
+}
+
+.row2 {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+#img {
+  background-color: #dee2ff;
+  padding: 20px 30px;
+}
+
+.mem_profile {
+  font-size: 1.5rem;
+  margin-left: 2rem;
+}
+
+.side {
+  display: flex;
+  justify-content: center;
+}
+
+.card3 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 40%;
+  padding: 30px;
+  background-color: aliceblue;
+}
+
+.card3 legend {
+  text-align: center;
+}
+
+.card3 li {
+  line-height: 1.5;
+}
+
+.fav {
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+  text-decoration: underline;
+}
+
+.aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 5%;
+}
+
+/* iframe {
+  padding-left: 10%;
+  padding-right: 0;
+} */
+
+.reel {
+  background-color: #dee2ff;
+  padding: 30px 30px;
+}
+
+.reel p {
+  text-align: justify;
+}
+
+.ispy {
+  background-color: #dee2ff;
+  padding: 30px 30px;
+}
+
+.ispy p {
+  text-align: justify;
+}
+
+.thousand {
+  background-color: #dee2ff;
+  padding: 30px 30px;
+}
+
+.thousand p {
+  text-align: justify;
+}
+
+.nctwish h3 {
+  font-family: "Outfit", sans-serif;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  background-color: #815854;
+  color: #f9ebde;
+  margin-left: 18rem;
+  margin-right: 18rem;
+}
+
+.nctwish p {
+  margin-left: 1.5rem;
+}
+
+.example {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.example video {
+  max-width: 300px;
+  border-radius: 8px;
+}
+
+/* Contact Section */
+
+.contact_box {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #815854;
+  background-color: #815854;
+  margin-top: 30px;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding: 30px 40px;
+  border-radius: 10px;
+  max-width: 100vw;
+  max-height: 20vw;
+}
+
+.contact1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  color: #f9ebde;
+}
+
+.contact1 a {
+  color: #f9ebde;
+}
+
+.contact1 p {
+  font-size: 1.2rem;
+  line-height: 1;
+  color: #f9ebde;
+}
+
+.contact2 button {
+  color: #f9ebde;
+  max-width: 35rem;
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.contact2 {
+  display: flex;
+  flex-direction: column;
+  background-color: #f9ebde;
+  min-width: 30rem;
+  max-height: 20rem;
+  padding: 1rem 1.5rem 2rem 1.5rem;
+  border-radius: 10px;
+}
+
+.contact_box {
+  display: flex;
+  gap: 30px;
+}
+
+.contact2 input {
+  display: inline-block;
+  font-size: 1.2rem;
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+/* .project {
+  max-width: 80rem;
+} */
+
+select {
+  font-size: 1.2rem;
+  min-width: 27rem;
+  background-color: white;
+  border-radius: 8px;
+}
+
+textarea {
+  background-color: white;
+  min-width: 35rem;
+  min-height: 10rem;
+}
+
+button {
+  background-color: #815854;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.form option {
+  min-width: 30rem;
+}
+
+/* Footer */
+
+.footer {
+  background-color: #815854;
+  color: #f9ebde;
+  padding: 0.5rem 0;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+
+/* Media Query */
+
+@media (min-width: 1024px) {
+  .nav-links {
+    gap: 20px;
+    justify-content: flex-end;
+  }
+
+  .nav-links li {
+    flex-direction: row;
+    font-size: clamp(3px, 40vw, 20px);
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+  .header {
+    padding: 10px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .header h1 {
+    justify-content: center;
+    align-items: center;
+  }
+
+  #intro img {
+    max-width: 300px;
+  }
+
+  .members {
+    max-width: 300px;
+  }
+
+  #h3-1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .row {
+    gap: 1rem;
+  }
+
+  .row2 {
+    gap: 1rem;
+  }
+
+  .mem_profile {
+    margin: 1rem 2rem;
+    font-size: clamp(5px, 40vw, 20px);
+  }
+
+  #img img {
+    max-width: 200px;
+  }
+
+  .nctwish h3 {
+    font-size: clamp(1.8rem, 40vw, 10px);
+  }
+
+  .example video {
+    display: flex;
+    justify-content: space-between;
+    max-width: 500px;
+    gap: 5rem;
+    margin-bottom: 20px;
+  }
+
+  #intro h3 {
+    font-size: clamp(2px, 40vw, 20px);
+    justify-content: flex-start;
+    width: 40%;
+    margin: 1rem;
+  }
+
+  #intro h1 {
+    margin-top: 2rem;
+    font-size: clamp(8px, 40vw, 35px);
+  }
+
+  #intro p {
+    margin-top: 1rem;
+    font-size: clamp(5px, 40vw, 15px);
+  }
+
+  #intro img {
+    max-width: 250px;
+    top: 8%;
+  }
+
+  .card h1 {
+    font-size: clamp(2rem, 40vw, 3rem);
+    max-width: 20%;
+  }
+
+  .card img {
+    max-width: 250px;
+  }
+
+  .intro1 {
+    font-size: clamp(10px, 40vw, 25px);
+  }
+
+  .introduction {
+    font-size: clamp(10px, 40vw, 25px);
+    line-height: 1.5;
+  }
+
+  .working {
+    font-size: clamp(10px, 40vw, 15px);
+    line-height: 2;
+  }
+
+  .teaching {
+    font-size: 16px;
+    line-height: 2;
+  }
+
+  .language {
+    font-size: 16px;
+    line-height: 150%;
+  }
+
+  .foods {
+    font-size: 16px;
+    line-height: 150%;
+  }
+
+  .extra {
+    margin-bottom: 1rem;
+    gap: 50px;
+  }
+
+  .routine {
+    font-size: 16px;
+    line-height: 150%;
+    /* width: 30%; */
+  }
+
+  .edu {
+    display: flex;
+    position: static;
+  }
+
+  .education p {
+    font-size: clamp(5px, 40vw, 20px);
+  }
+
+  .education {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+
+  .edu1 {
+    width: 18rem;
+    padding: 3rem 2rem;
+    margin-left: 1rem;
+    font-size: clamp(1rem, 40vw, 2.5rem);
+  }
+
+  .edu2 {
+    width: 18rem;
+    padding: 2rem 2rem;
+    font-size: clamp(1rem, 40vw, 2.5rem);
+  }
+
+  .edu3 {
+    width: 18rem;
+  }
+
+  .Skills {
+    margin-bottom: 2rem;
+  }
+
+  .html img {
+    width: 100px;
+  }
+
+  .card2 {
+    gap: 1rem;
+  }
+
+  .html {
+    width: 30%;
+    height: 40%;
+    padding: 1rem 1rem;
+    font-size: clamp(5px, 40vw, 15px);
+  }
+
+  .css p {
+    font-size: clamp(0.5rem, 40vw, 1rem);
+  }
+
+  .responsive img {
+    width: 100px;
+  }
+
+  .responsive {
+    width: 30%;
+    height: 40%;
+    padding: 1rem 1rem;
+    font-size: clamp(5px, 40vw, 15px);
+  }
+
+  .gallery {
+    margin-top: 1rem;
+  }
+
+  .nctwishintro {
+    line-height: 1.5;
+    width: 50%;
+    height: 25%;
+    padding: 1rem 1rem;
+    font-size: clamp(5px, 40vw, 15px);
+  }
+
+  .example video {
+    max-width: 350px;
+  }
+
+  .one {
+    padding: 8px;
+    font-size: clamp(10px, 40vw, 20px);
+  }
+
+  .card3 {
+    width: 80%;
+    margin: 1rem 2rem;
+    font-size: clamp(10px, 40vw, 15px);
+  }
+
+  .side {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .aside {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-left: 30%;
+    margin-bottom: 30px;
+  }
+
+  .reel {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+  }
+
+  .ispy {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+  }
+
+  .thousand {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+  }
+
+  .nctwish h3 {
+    font-size: clamp(20px, 40vw, 25px);
+  }
+
+  .nctwish p {
+    margin: 1rem 2rem;
+  }
+
+  .contact {
+    max-width: 100vw;
+    max-height: 25vw;
+  }
+
+  .contact_box {
+    max-height: 40%;
+  }
+
+  .contact1 p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .contact1 {
+    line-height: 1.2;
+    font-size: clamp(10px, 40vw, 15px);
+  }
+
+  textarea {
+    min-width: 10rem;
+    min-height: 3rem;
+  }
+
+  select {
+    font-size: 1rem;
+    max-width: 10rem;
+    margin-top: 0.5rem;
+  }
+
+  .form {
+    gap: 0.5rem;
+  }
+
+  .form select {
+    max-width: 27rem;
+  }
+
+  .contact2 {
+    min-width: 30rem;
+    height: 13rem;
+  }
+
+  .contact2 button {
+    display: flex;
+    justify-content: center;
+    max-width: 27rem;
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .contact2 input {
+    display: inline;
+    margin: 0.5rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 1023px) {
+
+  html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 150px;
+  }
+
+  /* Navbar  */
+  .header h1 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .header {
+    height: 140px;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Introduction */
+
+  #intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #intro img {
+    width: 250px;
+    margin-top: 20%;
+  }
+
+  #intro h3 {
+    margin-left: 10px;
+  }
+
+  #intro h1 {
+    font-size: clamp(10px, 40vw, 20px);
+  }
+
+  #intro p {
+    font-size: clamp(0.2rem, 40vw, 1rem);
+  }
+
+  /* Biography  */
+
+  .introduction p {
+    font-size: clamp(10px, 40vw, 20px);
+    line-height: 1.5;
+  }
+
+  .introduction {
+    margin-top: 10%;
+  }
+
+  .education {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .edu1 {
+    text-align: center;
+    width: 50%;
+    margin-left: 25%;
+  }
+
+  .edu2 {
+    text-align: center;
+    width: 50%;
+    margin-left: 25%;
+  }
+
+  .edu3 {
+    text-align: center;
+    width: 50%;
+    margin-left: 25%;
+  }
+
+  .experience {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .working {
+    text-align: center;
+    width: 60%;
+    margin-left: 25%;
+  }
+
+  .working h2 {
+    padding-bottom: 20px;
+  }
+
+  .working ul {
+   padding: 10px 20px 10px 20px;
+  }
+
+  .teaching {
+    text-align: center;
+    width: 60%;
+    margin-left: 25%;
+  }
+
+  .teaching h2 {
+    margin-bottom: 20px;
+  }
+
+  .extra2 {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+
+  .card2 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+
+  .html img {
+    width: 80px;
+  }
+
+  .html {
+    text-align: center;
+    width: 60%;
+    margin-left: 25%;
+  }
+
+  .css img {
+    width: 80px;
+  }
+
+  .css {
+    text-align: center;
+    width: 60%;
+    margin-left: 25%;
+  }
+
+  .responsive img {
+    width: 100px;
+  }
+
+  .responsive {
+    text-align: center;
+    width: 60%;
+    margin-left: 25%;
+  }
+
+  .nctwishintro {
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .card_ {
+    margin-top: 20px;
+  }
+
+  .card_ img {
+    width: 250px;
+  }
+
+  .row img {
+    width: 150px;
+  }
+
+  .row2 img {
+    width: 150px;
+  }
+
+  #h3-1 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .side {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .card3 {
+    max-width: 60%;
+    margin-bottom: 30px;
+  }
+
+  .card3 li {
+    text-align: justify;
+    padding-left: 30px;
+  }
+
+  .nctwish h3 {
+    font-size: 20px;
+    width: 50%;
+    margin-left: 25%;
+  }
+
+  .row {
+    display: flex;
+  }
+
+  .aside {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-left: 10%;
+    width: 70%;
+    margin-bottom: 30px;
+  }
+
+  .contact1 p {
+    line-height: 1.5;
+  }
+
+  .contact_box {
+    display: flex;
+    flex-direction: column;
+    background-color: #815854;
+    max-height: 40%;
+  }
+
+  textarea {
+    min-height: 60%;
+    min-width: 40%;
+  }
+
+}
